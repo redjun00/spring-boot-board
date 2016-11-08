@@ -3,26 +3,16 @@ package com.example.board.service;
 import com.example.board.domain.Board;
 import com.example.board.domain.BoardRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
-//TODO transactional 확인해보자.
 @Service
 public class BoardServiceImpl implements BoardService{
 
     @Resource
     private BoardRepository boardRepository;
-
-    public BoardRepository getBoardRepository(){
-        return boardRepository;
-    }
-
-    public void setBoardRepository(BoardRepository boardRepository){
-        this.boardRepository = boardRepository;
-    }
 
     @Override
     public List<Board> list() {

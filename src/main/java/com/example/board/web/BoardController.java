@@ -20,7 +20,7 @@ public class BoardController {
     @Autowired
     private BoardService boardService;
 
-    @RequestMapping(value = "/list")
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("boardList", boardService.list());
         return "/board/list";
