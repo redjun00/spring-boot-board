@@ -10,12 +10,10 @@ import java.util.Date;
 @Entity
 @Data
 public class Board {
-
     @Id
     @GeneratedValue
     private int seq;
-
-    @Length(min=2, message="제목은 2자 이상 입력하세요.")
+    @Length(min = 2, message = "제목은 2자 이상 입력하세요.")
     private String title;
     @NotEmpty(message = "내용을 입력하세요.")
     private String content;
@@ -26,7 +24,8 @@ public class Board {
     private Date regDate;
     private int cnt;
 
-    public Board() { }
+    public Board() {
+    }
 
     public Board(String title, String content, String writer, int password) {
         super();
