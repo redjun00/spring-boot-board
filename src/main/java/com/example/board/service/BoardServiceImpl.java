@@ -9,6 +9,9 @@ import java.util.Date;
 import java.util.List;
 
 @Service
+//괄호 속 문자열은 식별자를 의미한다.
+//괄호를 생략할 경우 클래스명 그대로 사용한다.
+//따라서 ,같은 클래스명이 존재 할 시 같은 식별자가 생성되기때문에 에러가 발생한다.
 public class BoardServiceImpl implements BoardService{
 
     @Resource

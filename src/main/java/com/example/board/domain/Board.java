@@ -20,6 +20,7 @@ public class Board {
     @NotEmpty(message = "작성자를 입력하세요.")
     private String writer;
     private int password;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date regDate;
     private int cnt;

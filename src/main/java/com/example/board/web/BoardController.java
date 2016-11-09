@@ -13,7 +13,7 @@ import org.springframework.web.bind.support.SessionStatus;
 import javax.validation.Valid;
 
 @Slf4j
-@Controller
+@Controller//스프링 컨트롤러, 서블릿을 상속할 필요가 없으며, @Controller로 등록된 클래스 파일에 대한 bean을 자동으로 생성해준다.
 @RequestMapping(value = "/board")
 @SessionAttributes("board") //@SessionAttributes board 객체의 상태유지를 위해 제공되는 어노테이션. 항상 클래스 상단에 위치.
 public class BoardController {
